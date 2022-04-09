@@ -1,0 +1,26 @@
+{
+  "name": "puikwanlung",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server",
+    "watch": "node-sass src/scss -wo assets/css",
+    "start": "concurrently \"npm run watch\" \"npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eirineko/eirineko.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eirineko/eirineko.github.io/issues"
+  },
+  "homepage": "https://github.com/eirineko/eirineko.github.io#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^7.0.1"
+  }
+}

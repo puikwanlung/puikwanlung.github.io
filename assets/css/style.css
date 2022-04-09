@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;700&display=swap");
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+  color: #191919;
+  font-weight: 400;
+}
+
+#logo {
+  width: 100px;
+}
+
+.nav-link {
+  color: #191919;
+  padding: 0.5rem 3rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link,
+.nav-link:hover {
+  color: #f9d026;
+  background-color: #fff;
+}
+
+/* Works cards */
+
+.hidden {
+  display: none;
+}
+
+section {
+  max-width: 800px;
+}
+
+article {
+  background-color: aliceblue;
+}
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+p.title {
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: 0.2em;
+}
+
+p.subtitle {
+  font-size: 1.3em;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+.rounded-4 {
+  border-radius: 0.5rem;
+}
+
+.text-shadow-1 {
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+/* .g-4,
+.gy-4 {
+  --bs-gutter-y: 3rem;
+}
+
+.g-4,
+.gx-4 {
+  --bs-gutter-x: 3rem;
+} */
