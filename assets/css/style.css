@@ -93,13 +93,13 @@ main {
   z-index: 2;
 }
 
-/* Portfolio */
+/* Content */
 #cards {
   width: 70%;
   margin: 0 auto;
   max-width: 1000px;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
 }
 
 #work_filter {
@@ -118,13 +118,13 @@ main {
 
 section {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: column wrap;
+  justify-content: center;
   gap: 30px;
 }
 
 section article {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
   aspect-ratio: 1/1;
   background-color: antiquewhite;
   background-size: cover;
@@ -258,7 +258,7 @@ footer li img {
   margin-right: 5px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 650px) {
   header .nav {
     justify-content: center;
   }
@@ -266,14 +266,14 @@ footer li img {
     padding: 0 38px;
   }
 
-  /* section {
-    gap: 50px;
-    --n: 3;
+  section {
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
 
   section article {
-    width: calc((100% - (var(--n) - 1) * 50px) / var(--n));
-  } */
+    width: calc((100% - 60px) / 3);
+  }
 
   article span.title {
     font-size: 2em;
