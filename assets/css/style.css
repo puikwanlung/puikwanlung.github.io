@@ -121,11 +121,10 @@ section {
   flex-flow: row wrap;
   justify-content: space-between;
   gap: 30px;
-  --n: 2;
 }
 
 section article {
-  width: calc((100% - (var(--n) - 1) * 30px) / var(--n));
+  width: calc((100% - 60px) / 3);
   aspect-ratio: 1/1;
   background-color: antiquewhite;
   background-size: cover;
@@ -267,14 +266,14 @@ footer li img {
     padding: 0 38px;
   }
 
-  section {
+  /* section {
     gap: 50px;
     --n: 3;
   }
 
   section article {
     width: calc((100% - (var(--n) - 1) * 50px) / var(--n));
-  }
+  } */
 
   article span.title {
     font-size: 2em;
