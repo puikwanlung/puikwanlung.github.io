@@ -123,7 +123,7 @@ section {
   gap: 30px;
 }
 
-section article {
+section .card-box {
   width: 100%;
   aspect-ratio: 1/1;
   background-color: antiquewhite;
@@ -146,13 +146,14 @@ section article {
   display: block;
   color: #fff;
   text-decoration: none;
+  display: none;
 }
 
 a.bg-cover:hover {
   color: #fff;
 }
 
-article:hover > .bg-cover {
+.card-box:hover > .bg-cover {
   top: 0;
 }
 
@@ -172,30 +173,30 @@ article:hover > .bg-cover {
   background: #1a1a1a;
 }
 
-article p {
+.card-box p {
   position: absolute;
   margin: 0;
   padding: 10%;
   bottom: 0;
 }
 
-article span {
+.card-box span {
   display: block;
   line-height: 1em;
 }
 
-article span.title {
+.card-box span.title {
   font-size: 1.2em;
   font-weight: 600;
   margin-top: 8px;
 }
 
-article span.subtitle {
+.card-box span.subtitle {
   font-size: 0.9em;
   font-weight: 200;
 }
 
-article span.caption {
+.card-box span.caption {
   font-size: 1em;
   font-weight: 400;
   margin-top: 10px;
@@ -223,6 +224,10 @@ footer {
   margin: 0 auto;
   text-align: right;
   padding: 50px 0;
+}
+
+footer .logo {
+  width: 28px;
 }
 
 footer p,
@@ -271,15 +276,19 @@ footer li img {
     justify-content: space-between;
   }
 
-  section article {
+  section .card-box {
     width: calc((100% - 60px) / 3);
   }
 
-  article span.title {
+  .card-box span.title {
     font-size: 2em;
   }
 
-  article span.subtitle {
+  .card-box span.subtitle {
     font-size: 1.2em;
+  }
+
+  .bg-cover {
+    display: block;
   }
 }

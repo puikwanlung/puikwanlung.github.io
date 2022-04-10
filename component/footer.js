@@ -1,7 +1,7 @@
 const footer = document.createElement("template");
 
 template.innerHTML = `<footer>
-<img src="/assets/images/pui_slogo.png"  alt="Logo of Pui Kwan Lung, Interactive Media Designer" class="mb-2" />
+<img src="/assets/images/pui_slogo.png"  alt="Logo of Pui Kwan Lung, Interactive Media Designer" class="mb-2 logo" />
 <p>@ 2022 Design & Build by Pui Kwan Lung</p>
 
 
