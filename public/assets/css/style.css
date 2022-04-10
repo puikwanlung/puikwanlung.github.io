@@ -1,6 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;700&display=swap");
+
 body {
-  background: black;
-  color: red; }
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+  color: #191919;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+a {
+  cursor: pointer;
+}
 
 header {
-  padding: 18px; }
+  text-align: center;
+  margin: 0 auto;
+  padding: 38px 0 20px 0;
+}
+
+#logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: #191919;
+  padding: 0.5rem 3rem;
+}
+
+.nav-link:hover {
+  color: #f9d026;
+}
+
+/* Works cards */
+.hidden {
+  display: none !important;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Page trans */
+.anim-trans {
+  animation: anim 0.8s ease-in-out;
+}
+
+@keyframes anim {
+  0% {
+    width: 0;
+  }
+  20% {
+    z-index: 11;
+    transform: skewX(-3deg);
+  }
+  40% {
+    z-index: 11;
+    box-shadow: 10px 10px 5px #eaeaea;
+  }
+  60% {
+    transform: skewX(0);
+
+    z-index: 11;
+    box-shadow: 10px 10px 5px #eaeaea;
+  }
+  80% {
+    transform: skewX(1deg);
+
+    z-index: 11;
+    box-shadow: 10px 10px 5px #eaeaea;
+  }
+  100% {
+    transform: skewX(0) translateX(0);
+    width: 100%;
+    z-index: 1;
+    box-shadow: none;
+  }
+}
+
+/* About us */
+#aboutus {
+  background-color: #f8d026;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* Portfolio */
+#cards {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#work_filter {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.dropdown-toggle {
+  background-color: #f8d026;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 5px 20px;
+  color: #191919;
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  --n: 2;
+}
+
+section article {
+  width: calc((100% - (var(--n) - 1) * 30px) / var(--n));
+  aspect-ratio: 1/1;
+  background-color: antiquewhite;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  animation-duration: 0.8s;
+  transform-origin: bottom;
+  cursor: pointer;
+}
+
+.bg-cover {
+  top: 100%;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  height: 100%;
+  z-index: 2;
+  padding: 10%;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+a.bg-cover:hover {
+  color: #fff;
+}
+
+article:hover > .bg-cover {
+  top: 0;
+}
+
+.bg-cover.nxr {
+  background: #1aa9a4;
+}
+
+.bg-cover.ip {
+  background: #ff9d00;
+}
+
+.bg-cover.pizzaville {
+  background: #bb041c;
+}
+
+.bg-cover.b612 {
+  background: #1a1a1a;
+}
+
+article p {
+  position: absolute;
+  margin: 0;
+  padding: 10%;
+  bottom: 0;
+}
+
+article span {
+  display: block;
+  line-height: 1em;
+}
+
+article span.title {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+article span.subtitle {
+  font-size: 0.9em;
+  font-weight: 200;
+}
+
+article span.caption {
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 1.2em;
+}
+
+#nxr {
+  background-image: url("../images/thumb/nxr.jpg");
+}
+
+#b612 {
+  background-image: url("../images/thumb/B612.gif");
+}
+
+#ieltspractice {
+  background-image: url("../images/thumb/tablet-ieltspractice.jpg");
+}
+
+#pizzaville {
+  background-image: url("../images/thumb/pizzaville.jpg");
+}
+
+footer {
+  width: 70%;
+  margin: 0 auto;
+  text-align: right;
+  padding: 50px 0;
+}
+
+footer p,
+footer a {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+  color: #8e8e8e;
+  text-decoration: none;
+  display: block;
+}
+
+footer ul#social-links {
+  margin-top: 12px;
+}
+
+footer ul#social-links li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0 0 2px 0;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer li img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 800px) {
+  section {
+    gap: 50px;
+    --n: 3;
+  }
+
+  section article {
+    width: calc((100% - (var(--n) - 1) * 50px) / var(--n));
+  }
+
+  article span.title {
+    font-size: 2em;
+  }
+
+  article span.subtitle {
+    font-size: 1.2em;
+  }
+}

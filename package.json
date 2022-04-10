@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "lite-server",
-    "watch": "node-sass src/scss -wo assets/css",
-    "start": "concurrently \"npm run watch\" \"npm run dev\""
+    "start": "lite-server --baseDir=\"public\""
   },
   "repository": {
     "type": "git",
