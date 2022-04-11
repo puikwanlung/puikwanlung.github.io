@@ -90,6 +90,13 @@ section a {
   cursor: pointer;
   text-decoration: none;
   min-height: 300px;
+  position: relative;
+}
+
+.front-title {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
 }
 
 .bg-cover {
