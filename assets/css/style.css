@@ -80,7 +80,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
 }
 
 section a {
@@ -91,6 +90,7 @@ section a {
   text-decoration: none;
   min-height: 300px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 section a:hover {
@@ -327,12 +327,10 @@ footer li img {
 
   section a {
     aspect-ratio: 1/1;
-
     position: relative;
     overflow: hidden;
     animation-duration: 0.8s;
     transform-origin: bottom;
-
     min-height: unset;
   }
 
