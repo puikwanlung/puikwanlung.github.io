@@ -93,6 +93,10 @@ section a {
   position: relative;
 }
 
+section a:hover {
+  color: #fff;
+}
+
 .front-title {
   position: absolute;
   bottom: 0;
@@ -160,13 +164,13 @@ section a {
 }
 
 .card-box span.title {
-  font-size: 1.2em;
+  font-size: 2em;
   font-weight: 600;
   margin-top: 8px;
 }
 
 .card-box span.subtitle {
-  font-size: 0.9em;
+  font-size: 1.2em;
   font-weight: 200;
 }
 
@@ -289,7 +293,7 @@ footer li img {
     display: block;
     color: #fff;
     text-decoration: none;
-    display: none;
+    display: block;
   }
 
   .bg-cover:hover {
@@ -314,13 +318,6 @@ footer li img {
 
   .bg-cover.b612 {
     background: #1a1a1a;
-  }
-
-  .card-box .front-title {
-    position: absolute;
-    margin: 0;
-    padding: 10%;
-    bottom: 0;
   }
 
   section {
@@ -349,10 +346,6 @@ footer li img {
 
   .card-box span.subtitle {
     font-size: 1.2em;
-  }
-
-  .bg-cover {
-    display: block;
   }
 
   body#aboutme {
