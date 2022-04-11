@@ -94,7 +94,11 @@ section a {
   animation-duration: 0.8s;
   transform-origin: bottom;
   cursor: pointer;
-  background-image: url("../images/thumb/nxr.jpg");
+  text-decoration: none;
+}
+
+.bg-cover {
+  display: none;
 }
 
 /* .bg-cover {
@@ -140,6 +144,13 @@ section a {
   padding: 10%;
   bottom: 0;
 } */
+
+.card-box .front-title {
+  position: absolute;
+  margin: 0;
+  padding: 10%;
+  bottom: 0;
+}
 
 .card-box span {
   display: block;
@@ -258,7 +269,7 @@ footer li img {
   margin-right: 5px;
 }
 
-/*for phones  */
+/*for small desktop  */
 @media only screen and (min-width: 768px) {
   header .nav {
     justify-content: center;
@@ -266,6 +277,49 @@ footer li img {
   header .nav li {
     padding: 0 38px;
   }
+  .bg-cover {
+    top: 100%;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    height: 100%;
+    z-index: 2;
+    padding: 10%;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    display: none;
+  }
+
+  .bg-cover:hover {
+    color: #fff;
+  }
+
+  .card-box:hover > .bg-cover {
+    top: 0;
+  }
+
+  .bg-cover.nxr {
+    background: #1aa9a4;
+  }
+
+  .bg-cover.ip {
+    background: #ff9d00;
+  }
+
+  .bg-cover.pizzaville {
+    background: #bb041c;
+  }
+
+  .bg-cover.b612 {
+    background: #1a1a1a;
+  }
+
+  /* .card-box p {
+  position: absolute;
+  margin: 0;
+  padding: 10%;
+  bottom: 0;
+} */
 
   section {
     flex-flow: row wrap;
