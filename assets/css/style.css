@@ -91,6 +91,7 @@ section a {
   min-height: 300px;
   position: relative;
   margin-bottom: 30px;
+  background-position: center;
 }
 
 section a:hover {
