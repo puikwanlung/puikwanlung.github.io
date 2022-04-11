@@ -83,7 +83,7 @@ section {
   gap: 30px;
 }
 
-section .card-box {
+section a {
   width: 100%;
   aspect-ratio: 1/1;
   background-color: antiquewhite;
