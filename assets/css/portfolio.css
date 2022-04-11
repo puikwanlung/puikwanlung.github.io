@@ -61,6 +61,7 @@
 .content-container h3 {
   font-size: 1.2em;
   width: 200;
+  margin-bottom: 5px;
 }
 
 #xd-links-box {
@@ -109,6 +110,10 @@
 .content-container img {
   width: 100%;
   margin-bottom: 15px;
+}
+
+.video {
+  width: 350px;
 }
 
 /* IELTSpractice website building */
@@ -211,12 +216,20 @@
     padding: 14px 0 0 40px;
     font-size: 1.4em;
   }
+  .video {
+    width: 640px;
+    height: 385px;
+  }
 }
 
 /*for small laptops  */
 @media only screen and (min-width: 992px) {
   #banner-box .content-box {
     left: 20%;
+  }
+  .video {
+    width: 853px;
+    height: 505px;
   }
 }
 
