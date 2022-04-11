@@ -39,7 +39,8 @@
 #banner-box h3,
 .content-container h1,
 .content-container h2,
-.content-container h3 {
+.content-container h3,
+.content-container h4 {
   margin: 0;
 }
 
@@ -60,6 +61,12 @@
 #banner-box h3,
 .content-container h3 {
   font-size: 1.2em;
+  width: 200;
+  margin-bottom: 5px;
+}
+
+.content-container h4 {
+  font-size: 0.9em;
   width: 200;
   margin-bottom: 5px;
 }
@@ -114,6 +121,10 @@
 
 .video {
   width: 350px;
+}
+
+.credit-box {
+  text-align: left;
 }
 
 /* IELTSpractice website building */
