@@ -76,7 +76,7 @@ main {
   text-decoration: none;
 }
 
-section {
+/* section {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -94,7 +94,7 @@ section a {
   animation-duration: 0.8s;
   transform-origin: bottom;
   cursor: pointer;
-}
+} */
 
 .bg-cover {
   top: 100%;
@@ -108,7 +108,7 @@ section a {
   text-decoration: none;
 }
 
-a.bg-cover:hover {
+.bg-cover:hover {
   color: #fff;
 }
 
