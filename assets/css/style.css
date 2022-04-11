@@ -76,12 +76,25 @@ main {
   text-decoration: none;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
 section a {
-  background-size: cover;
-  color: red;
-  background-image: url("../images/thumb/nxr.jpg");
-  display: block;
   width: 100%;
+  aspect-ratio: 1/1;
+
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  animation-duration: 0.8s;
+  transform-origin: bottom;
+  cursor: pointer;
+  background-image: url("../images/thumb/nxr.jpg");
 }
 
 /* .bg-cover {
