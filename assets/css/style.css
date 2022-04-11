@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
 body {
   font-family: "Dosis", sans-serif;
   font-size: 14px;
@@ -15,10 +17,14 @@ a {
 }
 
 header {
-  text-align: center;
-  margin: 0 auto;
   padding: 38px 0 20px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+#header-width {
   width: 70%;
+  margin: 0 auto;
 }
 
 header .nav {
@@ -45,52 +51,6 @@ header .nav {
 
 main {
   flex-grow: 1;
-}
-
-/* Page trans */
-.anim-trans {
-  animation: anim 0.8s ease-in-out;
-}
-
-@keyframes anim {
-  0% {
-    width: 0;
-  }
-  20% {
-    z-index: 11;
-    transform: skewX(-3deg);
-  }
-  40% {
-    z-index: 11;
-    box-shadow: 10px 10px 5px #eaeaea;
-  }
-  60% {
-    transform: skewX(0);
-
-    z-index: 11;
-    box-shadow: 10px 10px 5px #eaeaea;
-  }
-  80% {
-    transform: skewX(1deg);
-
-    z-index: 11;
-    box-shadow: 10px 10px 5px #eaeaea;
-  }
-  100% {
-    transform: skewX(0) translateX(0);
-    width: 100%;
-    z-index: 1;
-    box-shadow: none;
-  }
-}
-
-/* About us */
-#aboutus {
-  background-color: #f8d026;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 2;
 }
 
 /* Content */
@@ -219,11 +179,45 @@ a.bg-cover:hover {
   background-image: url("../images/thumb/pizzaville.jpg");
 }
 
+/* About us */
+
+#aboutus-box {
+  padding: 50px;
+}
+
+#aboutus-box h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+  line-height: 1.8em;
+  margin: 30px 0 0 0;
+}
+
+#aboutus-box h2 {
+  font-size: 1.2em;
+  font-weight: 200;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+#aboutus-box span {
+  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+#aboutus-box img.mobile {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Footer */
 footer {
   width: 70%;
   margin: 0 auto;
   text-align: right;
   padding: 50px 0;
+  max-width: 1000px;
 }
 
 footer .logo {
@@ -263,7 +257,8 @@ footer li img {
   margin-right: 5px;
 }
 
-@media only screen and (min-width: 650px) {
+/*for phones  */
+@media only screen and (min-width: 768px) {
   header .nav {
     justify-content: center;
   }
@@ -290,5 +285,84 @@ footer li img {
 
   .bg-cover {
     display: block;
+  }
+
+  body#aboutme {
+    background-clip: border-box;
+    background-position: -420px 0;
+
+    background-image: url("../images/puikwanlung-profile-image-desktop.jpg");
+    background-repeat: no-repeat;
+  }
+
+  #aboutus-box img.mobile {
+    display: none;
+  }
+
+  #aboutus-content {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  #aboutus-box h1,
+  #aboutus-box h2 {
+    padding-left: 50%;
+  }
+
+  #aboutus-box h1 {
+    line-height: 1.2em;
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+
+  #aboutus-box h2 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+
+  #aboutus-box span {
+    font-size: 1.2em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+}
+
+/*for small laptops  */
+@media only screen and (min-width: 992px) {
+  body#aboutme {
+    background-position: -300px 0;
+  }
+
+  #aboutus-box h1 {
+    line-height: 1.2em;
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+
+  #aboutus-box h2 {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+}
+
+/*for laptops and desktops */
+@media only screen and (min-width: 1200px) {
+  body#aboutme {
+    background-position: -200px 0;
+  }
+}
+
+/*for large laptops and desktops */
+@media only screen and (min-width: 1400px) {
+  body#aboutme {
+    background-position: -100px 0;
+  }
+}
+
+/*for xlarge laptops and desktops */
+@media only screen and (min-width: 1650px) {
+  body#aboutme {
+    background-position: 0 0;
   }
 }

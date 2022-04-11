@@ -14,98 +14,87 @@
 
     <!-- General CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
-
-
-
   </head>
   <body>
     <!--Header-->
-      <script src="component/header.js"></script>
+    <script src="component/header.js"></script>
     <!--Content-->
     <main>
+      <div id="cards">
+        <div id="work_filter">
+          <a class="dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" aria-current="page">Type of work</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#" id="select-UXUI">UX & UI Design</a></li>
+            <li><a class="dropdown-item" href="#" id="select-AE">Motion Design</a></li>
+            <li><a class="dropdown-item" href="#" id="select-PS">Photohsop</a></li>
+            <li><a class="dropdown-item" href="#" id="select-AI">Illustration</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#" id="select-all">All</a></li>
+          </ul>
+        </div>
 
-          <!--About us-->
-          <script src="component/aboutus.js"></script>
-    
-<div id="cards">
+        <section>
+          <a class="card_UXUI show card-box" id="nxr" href="portfolio/nxr.htm">
+            <p class="bg-cover nxr">
+              <span class="subttitle">UX/UI case study & app design</span>
+              <span class="title">Jet Ski & Snowmobile</span>
+              <span class="caption">Aims to develop an all-in-one app to seamless the booking process.</span>
+            </p>
+            <p>
+              <span class="subttitle">UX/UI case study & app design</span>
+              <span class="title">Jet Ski & Snowmobile</span>
+            </p>
+          </a>
+          <a class="card_UXUI show card-box" id="ieltspractice">
+            <p class="bg-cover ip">
+              <span class="subttitle">Website building</span>
+              <span class="title">IELTSpractice</span>
+              <span class="caption">Built an reponsive e-commence website to maximum ROI.</span>
+            </p>
 
-  <div id="work_filter">
-      <a class="dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" aria-current="page">Type of work</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#" id="select-UXUI">UX & UI Design</a></li>
-        <li><a class="dropdown-item" href="#" id="select-AE">Motion Design</a></li>
-        <li><a class="dropdown-item" href="#" id="select-PS">Photohsop</a></li>
-        <li><a class="dropdown-item" href="#" id="select-AI">Illustration</a></li>
-        <li><hr class="dropdown-divider" /></li>
-        <li><a class="dropdown-item" href="#" id="select-all">All</a></li>
-      </ul>
-    </div>
+            <p>
+              <span class="subttitle">Website building</span>
+              <span class="title">IELTSpractice</span>
+            </p>
+          </a>
+          <a class="card_UXUI show card-box" id="pizzaville">
+            <p class="bg-cover pizzaville">
+              <span class="subttitle">Website redesign</span>
+              <span class="title">PizzaVille</span>
+              <span class="caption">Provide a happy online shopping experience.</span>
+            </p>
+            <p>
+              <span class="subttitle">Website redesign</span>
+              <span class="title">PizzaVilla</span>
+            </p>
+          </a>
 
+          <a class="card_AE show card-box" id="b612">
+            <p class="bg-cover b612">
+              <span class="subttitle">Motion Design</span>
+              <span class="title">B612</span>
+              <span class="caption">A story about The Little Prince.</span>
+            </p>
+            <p>
+              <span class="subttitle">Motion Design</span>
+            </p>
+          </a>
 
-      <section>
-        <a class="card_UXUI show card-box " id="nxr"  href="portfolio/nxr.htm">
-
-          <p class="bg-cover nxr">
-            <span class="subttitle">UX/UI case study & app design</span>
-            <span class="title">Jet Ski & Snowmobile</span>
-            <span class="caption">Aims to develop an all-in-one app to seamless the booking process.</span>
-          </p>
-          <p>
-            <span class="subttitle">UX/UI case study & app design</span>
-            <span class="title">Jet Ski & Snowmobile</span>
-          </p>
-        </a>
-        <a class="card_UXUI show card-box " id="ieltspractice">
-          <p class="bg-cover ip">
-            <span class="subttitle">Website building</span>
-            <span class="title">IELTSpractice</span>
-            <span class="caption">Built an reponsive e-commence website to maximum ROI.</span>
-          </p>
-
-          <p>
-            <span class="subttitle">Website building</span>
-            <span class="title">IELTSpractice</span>
-          </p>
-        </a>
-        <a class="card_UXUI show card-box " id="pizzaville">
-          <p class="bg-cover pizzaville">
-            <span class="subttitle">Website redesign</span>
-            <span class="title">PizzaVille</span>
-            <span class="caption">Provide a happy online shopping experience.</span>
-          </p>
-          <p>
-            <span class="subttitle">Website redesign</span>
-            <span class="title">PizzaVilla</span>
-          </p>
-        </a>
-
-        <a class="card_AE show card-box " id="b612">
-          <p class="bg-cover b612">
-            <span class="subttitle">Motion Design</span>
-            <span class="title">B612</span>
-            <span class="caption">A story about The Little Prince.</span>
-          </p>
-          <p>
-            <span class="subttitle">Motion Design</span>
-          </p>
-        </a>
-
-        <!-- <article class="card_PS show">wakaka</article>
+          <!-- <article class="card_PS show">wakaka</article>
 
         <article class="card_AI show">hoho</article>
 
         <article class="card_AI show">walala</article> -->
-      </section>
+        </section>
       </div>
     </main>
-  </div>
 
-  <!--Footer-->
-  <script src="component/footer.js"></script>
+    <!--Footer-->
+    <script src="component/footer.js"></script>
 
-   <!-- General script -->
+    <!-- General script -->
     <script src="assets/js/filter-portfolio.js"></script>
-    <script src="assets/js/menu.js"></script>
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>

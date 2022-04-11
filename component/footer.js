@@ -1,7 +1,7 @@
 const footer = document.createElement("template");
 
-template.innerHTML = `<footer>
-<img src="/assets/images/pui_slogo.png"  alt="Logo of Pui Kwan Lung, Interactive Media Designer" class="mb-2 logo" />
+template.innerHTML = `
+<footer><img src="/assets/images/pui_slogo.png"  alt="Logo of Pui Kwan Lung, Interactive Media Designer" class="mb-2 logo" />
 <p>@ 2022 Design & Build by Pui Kwan Lung</p>
 
 
@@ -18,10 +18,10 @@ template.innerHTML = `<footer>
   <img src="/assets/images/icon-instagram.png" >
   <a href="https://www.instagram.com/nekolung">@nekolung</a>
 </li>
-</ul>
+</ul></footer>
 
 
-</footer>
+
 
 `;
 
