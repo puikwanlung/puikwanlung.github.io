@@ -106,7 +106,6 @@ section a {
   display: block;
   color: #fff;
   text-decoration: none;
-  display: none;
 }
 
 a.bg-cover:hover {
