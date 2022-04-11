@@ -90,8 +90,8 @@ section a {
   text-decoration: none;
   min-height: 300px;
   position: relative;
-  margin-bottom: 30px;
   background-position: center;
+  margin-bottom: 30px;
 }
 
 section a:hover {
