@@ -145,12 +145,12 @@ section a {
   bottom: 0;
 } */
 
-.card-box .front-title {
+/* .card-box .front-title {
   position: absolute;
   margin: 0;
   padding: 10%;
   bottom: 0;
-}
+} */
 
 .card-box span {
   display: block;
@@ -314,12 +314,12 @@ footer li img {
     background: #1a1a1a;
   }
 
-  /* .card-box p {
-  position: absolute;
-  margin: 0;
-  padding: 10%;
-  bottom: 0;
-} */
+  .card-box .front-title {
+    position: absolute;
+    margin: 0;
+    padding: 10%;
+    bottom: 0;
+  }
 
   section {
     flex-flow: row wrap;
