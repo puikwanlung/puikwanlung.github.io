@@ -76,27 +76,15 @@ main {
   text-decoration: none;
 }
 
-/* section {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  gap: 30px;
+section a {
+  background-size: cover;
+  color: red;
+  background-image: url("../images/thumb/nxr.jpg");
+  display: block;
+  width: 100%;
 }
 
-section a {
-  width: 100%;
-  aspect-ratio: 1/1;
-  background-color: antiquewhite;
-  background-size: cover;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  animation-duration: 0.8s;
-  transform-origin: bottom;
-  cursor: pointer;
-} */
-
-.bg-cover {
+/* .bg-cover {
   top: 100%;
   position: relative;
   transition: all 0.4s ease-in-out;
@@ -106,6 +94,7 @@ section a {
   display: block;
   color: #fff;
   text-decoration: none;
+  display: none;
 }
 
 .bg-cover:hover {
@@ -130,14 +119,14 @@ section a {
 
 .bg-cover.b612 {
   background: #1a1a1a;
-}
+} */
 
-.card-box p {
+/* .card-box p {
   position: absolute;
   margin: 0;
   padding: 10%;
   bottom: 0;
-}
+} */
 
 .card-box span {
   display: block;
