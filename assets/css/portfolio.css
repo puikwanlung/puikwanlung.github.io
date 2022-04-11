@@ -3,6 +3,7 @@
   max-width: none;
 }
 
+/* Banner */
 #nxr-banner {
   background-image: url("../images/nxr-banner.jpg");
   background-position: top center;
@@ -13,38 +14,52 @@
   min-height: 120px;
 }
 
+#ip-banner {
+  color: #0b0b0b;
+}
+
 #banner-box {
   position: relative;
 }
 
 #banner-box article,
-#content-box {
+.content-container {
   width: 70%;
   margin: 0 auto;
   max-width: 800px;
   padding-top: 30px;
 }
 
-#cards h1,
-#cards h2,
-#cards h3 {
+.content-container {
+  text-align: center;
+}
+
+#banner-box h1,
+#banner-box h2,
+#banner-box h3,
+.content-container h1,
+.content-container h2,
+.content-container h3 {
   margin: 0;
 }
 
-#cards h1 {
+#banner-box h1,
+.content-container h1 {
   font-size: 2em;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-#cards h2 {
-  font-size: 1.2em;
+#banner-box h2,
+.content-container h2 {
+  font-size: 1.3em;
   width: 400;
   margin-bottom: 10px;
 }
 
-#cards h3 {
-  font-size: 1em;
+#banner-box h3,
+.content-container h3 {
+  font-size: 1.2em;
   width: 200;
 }
 
@@ -76,7 +91,6 @@
 }
 
 /* Content */
-
 .sec-title {
   width: 100%;
   height: 20px;
@@ -92,9 +106,76 @@
   font-weight: 400;
 }
 
-#content-box img {
+.content-container img {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* IELTSpractice website building */
+.ip-screens {
+  position: relative;
+}
+
+.ip-screens span {
+  position: absolute;
+  display: block;
+  width: 147px;
+  height: 44px;
+  padding: 8px 0 0 20px;
+  font-size: 1.2em;
+  color: #ffffff;
+  text-align: left;
+}
+
+.ip-screens span.spink {
+  background-image: url("../images/labels/label-3.png");
+  background-size: cover;
+}
+
+.ip-screens span.lgreen {
+  background-image: url("../images/labels/label-17.png");
+  background-size: cover;
+}
+
+.ip-screens span.rorange {
+  background-image: url("../images/labels/label-10.png");
+  background-size: cover;
+}
+
+.ip-screens#ip-web {
+  width: 60%;
+}
+
+.ip-screens#ip-web span {
+  top: 20px;
+  right: -100px;
+}
+
+#ip-screen-flex {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.ip-screens#ip-tablet {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.ip-screens#ip-tablet span {
+  top: 20px;
+  right: -80px;
+  z-index: 2;
+}
+
+.ip-screens#ip-mobile {
+  width: 20%;
+}
+
+.ip-screens#ip-mobile span {
+  bottom: 20px;
+  right: -70px;
 }
 
 /*for phones  */
@@ -107,20 +188,28 @@
 
   #banner-box .content-box {
     position: absolute;
-    top: 5%;
+    top: 12%;
     left: 10%;
   }
 
-  #cards h1 {
+  #banner-box h1 {
     font-size: 2.6em;
     margin-bottom: 10px;
   }
 
-  #cards h1,
-  #cards h2,
-  #cards h3 {
+  #banner-box h1,
+  #banner-box h2,
+  #banner-box h3 {
     padding-right: 40%;
     color: #ffffff;
+  }
+
+  /* IP label position */
+  .ip-screens span {
+    width: 211px;
+    height: 64px;
+    padding: 14px 0 0 40px;
+    font-size: 1.4em;
   }
 }
 

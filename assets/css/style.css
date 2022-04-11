@@ -29,6 +29,7 @@ header {
 
 header .nav {
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 #logo {
@@ -38,10 +39,18 @@ header .nav {
 
 .nav-link {
   color: #191919;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .nav-link:hover {
   color: #f9d026;
+}
+#portfolio .nav-link.active-port,
+#aboutme .nav-link.active-about,
+#contact .nav-link.active-contact {
+  color: #f9d026;
+  text-decoration: underline;
 }
 
 /* Works cards */
@@ -107,57 +116,6 @@ section a:hover {
 .bg-cover {
   display: none;
 }
-
-/* .bg-cover {
-  top: 100%;
-  position: relative;
-  transition: all 0.4s ease-in-out;
-  height: 100%;
-  z-index: 2;
-  padding: 10%;
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  display: none;
-}
-
-.bg-cover:hover {
-  color: #fff;
-}
-
-.card-box:hover > .bg-cover {
-  top: 0;
-}
-
-.bg-cover.nxr {
-  background: #1aa9a4;
-}
-
-.bg-cover.ip {
-  background: #ff9d00;
-}
-
-.bg-cover.pizzaville {
-  background: #bb041c;
-}
-
-.bg-cover.b612 {
-  background: #1a1a1a;
-} */
-
-/* .card-box p {
-  position: absolute;
-  margin: 0;
-  padding: 10%;
-  bottom: 0;
-} */
-
-/* .card-box .front-title {
-  position: absolute;
-  margin: 0;
-  padding: 10%;
-  bottom: 0;
-} */
 
 .card-box span {
   display: block;
@@ -347,6 +305,7 @@ footer li img {
     font-size: 1.2em;
   }
 
+  /* About us */
   body#aboutme {
     background-clip: border-box;
     background-position: -420px 0;
@@ -395,13 +354,13 @@ footer li img {
   }
 
   #aboutus-box h1 {
+    font-size: 1.8em;
     line-height: 1.2em;
-    font-size: 2em;
     margin-bottom: 15px;
   }
 
   #aboutus-box h2 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 1.4em;
   }
 }
