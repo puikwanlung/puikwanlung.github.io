@@ -135,10 +135,10 @@
 .ip-screens span {
   position: absolute;
   display: block;
-  width: 147px;
-  height: 44px;
-  padding: 8px 0 0 20px;
-  font-size: 1.2em;
+  width: 112px;
+  height: 33px;
+  padding: 6px 0 0 8px;
+  font-size: 1em;
   color: #ffffff;
   text-align: left;
 }
@@ -190,7 +190,7 @@
 }
 
 .ip-screens#ip-mobile span {
-  bottom: 20px;
+  bottom: 0px;
   right: -70px;
 }
 
@@ -222,9 +222,9 @@
 
   /* IP label position */
   .ip-screens span {
-    width: 211px;
-    height: 64px;
-    padding: 14px 0 0 40px;
+    width: 168px;
+    height: 51px;
+    padding: 8px 0 0 20px;
     font-size: 1.4em;
   }
   .video {
