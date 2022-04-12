@@ -1,5 +1,3 @@
-import "../css/style.css";
-
 //Project setup
 import * as THREE from "three";
 
