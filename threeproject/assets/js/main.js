@@ -51,7 +51,7 @@ renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
 //Load scene background
-const spaceTexture = new THREE.TextureLoader().load("/threeproejct/images/little-street.jpg");
+const spaceTexture = new THREE.TextureLoader().load("/threeproject/images/little-street.jpg");
 scene.background = spaceTexture;
 
 //Adding lighting
@@ -79,7 +79,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 
 //Stars particle Loader
 const loader = new THREE.TextureLoader();
-const cross = loader.load("/threeproejct/images/cross.png");
+const cross = loader.load("/threeproject/images/cross.png");
 
 //Drawing on Canvas
 //Ring
