@@ -13,7 +13,7 @@ template.innerHTML = `
     <a href="/about.htm" class="nav-link active-about" >ABOUT</a>
   </li>
   <li class="nav-item">
-    <a href="#" class="nav-link active-contact">CONTACT</a>
+    <a href="/contact.htm" class="nav-link active-contact">CONTACT</a>
   </li>
 </ul>
 </div>

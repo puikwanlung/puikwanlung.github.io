@@ -156,36 +156,133 @@ section a:hover {
   background-image: url("../images/thumb/pizzaville.jpg");
 }
 
-/* About us */
-
-#aboutus-box {
-  padding: 50px;
+#breakfast {
+  background-image: url("../images/thumb/breakfast.jpg");
+  color: #0b0b0b;
 }
 
-#aboutus-box h1 {
-  font-size: 1.6em;
-  font-weight: 600;
-  line-height: 1.8em;
-  margin: 30px 0 0 0;
+#apartment {
+  background-image: url("../images/thumb/app-apartment-rental.jpg");
+}
+
+/* About us */
+#aboutus-content,
+#contact-box {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+#aboutus-image {
+  background-image: url("../images/puikwanlung-profile-image.jpg");
+  width: 100%;
+  height: 50vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 50px;
 }
 
 #aboutus-box h2 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 200;
   line-height: 1.6em;
+  margin: 20px 0 0 0;
+}
+
+/* Typewriter */
+#typewriter span {
+  font-size: 1.4em;
   margin: 0;
+  font-family: "Dosis", sans-serif;
+  display: inline-block;
+  line-height: 1.4em;
+  font-weight: 600;
 }
 
-#aboutus-box span {
-  font-size: 1.2em;
-  font-family: "Roboto", sans-serif;
+#typewriter:after {
+  content: " _";
+  animation: blink 500ms linear infinite alternate;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Contact pages */
+#contact-box {
+  margin-top: 100px;
+}
+
+#contact-box article {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+}
+
+#contact-box h1 {
+  font-size: 2.8em;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4em;
+}
+
+#contact-box h2 {
+  font-size: 1.6em;
   font-weight: 400;
+  margin: 0;
+  line-height: 1.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#aboutus-box img.mobile {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
+#contact-box h2 a {
+  text-decoration: none;
+  color: #191919;
+}
+
+#contact-box h2 img {
+  width: 28px;
+  height: 28px;
+  margin-right: 3px;
+}
+
+/* Text highlight effect */
+span.highlight {
+  background-image: linear-gradient(#f9d026, #f9d026);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 100% 2px;
+  transition: background-size 0.5s, background-position 0.3s ease-in 0.5s;
+}
+
+span.highlight:hover {
+  background-size: 100% 100%;
+  background-position: 0% 0%;
+  transition: background-position 0.3s, background-size 0.1s ease-in 0.3s;
 }
 
 /* Footer */
@@ -211,10 +308,6 @@ footer a {
   display: block;
 }
 
-footer ul#social-links {
-  margin-top: 12px;
-}
-
 footer ul#social-links li {
   display: flex;
   flex-direction: row;
@@ -231,7 +324,7 @@ footer a:hover {
 footer li img {
   width: 16px;
   height: 16px;
-  margin-right: 5px;
+  margin-right: 3px;
 }
 
 /*for small desktop  */
@@ -279,9 +372,17 @@ footer li img {
     background: #1a1a1a;
   }
 
+  .bg-cover.breakfast {
+    background: #cba38d;
+  }
+
+  .bg-cover.apartment {
+    background: #eacc4e;
+  }
+
   section {
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   section a {
@@ -295,6 +396,7 @@ footer li img {
 
   section .card-box {
     width: calc((100% - 60px) / 3);
+    margin-right: 20px;
   }
 
   .card-box span.title {
@@ -304,84 +406,34 @@ footer li img {
   .card-box span.subtitle {
     font-size: 1.2em;
   }
+}
 
+/*for medium desktop  */
+@media only screen and (min-width: 1000px) {
   /* About us */
-  body#aboutme {
-    background-clip: border-box;
-    background-position: -420px 0;
 
-    background-image: url("../images/puikwanlung-profile-image-desktop.jpg");
-    background-repeat: no-repeat;
-  }
-
-  #aboutus-box img.mobile {
-    display: none;
-  }
-
-  #aboutus-content {
-    width: 100%;
+  #aboutus-box {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 70%;
     margin: 0 auto;
     max-width: 1000px;
   }
 
-  #aboutus-box h1,
-  #aboutus-box h2 {
-    padding-left: 50%;
+  #aboutus-image {
+    width: 500px;
+    background-size: cover;
+    background-position: center bottom;
+    margin-bottom: 0;
   }
 
-  #aboutus-box h1 {
-    line-height: 1.2em;
-    font-size: 2em;
-    margin-bottom: 15px;
+  #aboutus-image {
+    width: 40%;
   }
 
-  #aboutus-box h2 {
-    font-size: 1.2em;
-    line-height: 1.4em;
-  }
-
-  #aboutus-box span {
-    font-size: 1.2em;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-  }
-}
-
-/*for small laptops  */
-@media only screen and (min-width: 992px) {
-  body#aboutme {
-    background-position: -300px 0;
-  }
-
-  #aboutus-box h1 {
-    font-size: 1.8em;
-    line-height: 1.2em;
-    margin-bottom: 15px;
-  }
-
-  #aboutus-box h2 {
-    font-size: 1.2em;
-    line-height: 1.4em;
-  }
-}
-
-/*for laptops and desktops */
-@media only screen and (min-width: 1200px) {
-  body#aboutme {
-    background-position: -200px 0;
-  }
-}
-
-/*for large laptops and desktops */
-@media only screen and (min-width: 1400px) {
-  body#aboutme {
-    background-position: -100px 0;
-  }
-}
-
-/*for xlarge laptops and desktops */
-@media only screen and (min-width: 1650px) {
-  body#aboutme {
-    background-position: 0 0;
+  #aboutus-content {
+    width: 55%;
+    margin-left: 5%;
   }
 }
