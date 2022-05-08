@@ -18,13 +18,23 @@
   color: #0b0b0b;
 }
 
+#ls-banner {
+  background-image: url("../images/ls-banner.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  height: 30vh;
+  min-height: 120px;
+}
+
 #banner-box {
   position: relative;
 }
 
 #banner-box article,
 .content-container {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   max-width: 800px;
   padding-top: 30px;
@@ -54,7 +64,7 @@
 #banner-box h2,
 .content-container h2 {
   font-size: 1.3em;
-  width: 400;
+  font-weight: 400;
   margin-bottom: 10px;
   line-height: 1.5em;
 }
@@ -62,13 +72,13 @@
 #banner-box h3,
 .content-container h3 {
   font-size: 1.2em;
-  width: 200;
+  font-weight: 200;
   margin-bottom: 5px;
 }
 
 .content-container h4 {
   font-size: 0.9em;
-  width: 200;
+  font-weight: 200;
   margin-bottom: 5px;
 }
 
@@ -108,6 +118,16 @@
 
 #nxr-content .xd-btn:hover {
   background-color: #1da2b1;
+  color: #ffffff;
+}
+
+#ls-content .xd-btn {
+  background-color: #bd5d57;
+  color: #ffffff;
+}
+
+#ls-content .xd-btn:hover {
+  background-color: #69a2e9;
   color: #ffffff;
 }
 
@@ -231,7 +251,8 @@
 
 /*for phones  */
 @media only screen and (min-width: 768px) {
-  #nxr-banner {
+  #nxr-banner,
+  #ls-banner {
     height: 40vh;
     min-height: 500px;
     background-size: cover;
@@ -253,6 +274,17 @@
   #banner-box h3 {
     padding-right: 45%;
     color: #ffffff;
+  }
+
+  /* Ul 2 column table  */
+  .design-ideas .list-box {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .design-ideas .list-box article {
+    width: 40%;
   }
 
   /* IP label position */
