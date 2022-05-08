@@ -50,7 +50,6 @@ header .nav {
 #aboutme .nav-link.active-about,
 #contact .nav-link.active-contact {
   color: #f9d026;
-  text-decoration: underline;
 }
 
 /* Works cards */
@@ -83,6 +82,11 @@ main {
   padding: 5px 20px;
   color: #191919;
   text-decoration: none;
+}
+
+.dropdown-toggle:hover {
+  background-color: #ead992;
+  color: #191919;
 }
 
 section {
@@ -373,11 +377,11 @@ footer li img {
   }
 
   .bg-cover.breakfast {
-    background: #cba38d;
+    background: #7b8f66;
   }
 
   .bg-cover.apartment {
-    background: #eacc4e;
+    background: #ccb4a7;
   }
 
   section {
