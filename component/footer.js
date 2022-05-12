@@ -14,10 +14,7 @@ template.innerHTML = `
   <img src="/assets/images/icon-email.png" />
   <a href="mailto:eirineko@gmail.com">eirineko@gmail.com</a>
 </li>
-<li>
-  <img src="/assets/images/icon-instagram.png" >
-  <a href="https://www.instagram.com/nekolung">@nekolung</a>
-</li>
+
 </ul></footer>
 
 

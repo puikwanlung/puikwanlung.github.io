@@ -173,6 +173,11 @@ section a:hover {
   background-image: url("../images/thumb/app-apartment-rental.jpg");
 }
 
+#burger {
+  background-image: url("../images/thumb/burger.gif");
+  color: #0b0b0b;
+}
+
 /* About us */
 #aboutus-content,
 #contact-box {
@@ -386,6 +391,14 @@ footer li img {
 
   .bg-cover.apartment {
     background: #ccb4a7;
+  }
+
+  .bg-cover.star {
+    background: #d8c803;
+  }
+
+  .bg-cover.burger {
+    background: #e9ad75;
   }
 
   section {
