@@ -12,6 +12,7 @@
   color: #ffffff;
   height: 30vh;
   min-height: 120px;
+  margin-bottom: 20px;
 }
 
 #ip-banner {
@@ -24,8 +25,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
+}
+
+.banner_whole {
   height: 30vh;
   min-height: 120px;
+  margin-bottom: 20px;
 }
 
 #banner-box {
