@@ -27,6 +27,14 @@
   color: #ffffff;
 }
 
+#sxthree-banner {
+  background-image: url("../images/sx3-banner.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
 .banner_whole {
   height: 30vh;
   min-height: 120px;
@@ -131,6 +139,16 @@
 }
 
 #ls-content .xd-btn:hover {
+  background-color: #69a2e9;
+  color: #ffffff;
+}
+
+#sxthree-content .xd-btn {
+  background-color: #bd5d57;
+  color: #ffffff;
+}
+
+#sxthree-content .xd-btn:hover {
   background-color: #69a2e9;
   color: #ffffff;
 }
@@ -291,7 +309,8 @@
 /*for phones  */
 @media only screen and (min-width: 768px) {
   #nxr-banner,
-  #ls-banner {
+  #ls-banner,
+  #sxthree-banner {
     height: 40vh;
     min-height: 500px;
     background-size: cover;

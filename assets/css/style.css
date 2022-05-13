@@ -156,6 +156,10 @@ section a:hover {
   background-image: url("../images/thumb/wish-upon-a-star.gif");
 }
 
+#sx3 {
+  background-image: url("../images/thumb/Sx3.jpg");
+}
+
 #ieltspractice {
   background-image: url("../images/thumb/tablet-ieltspractice.jpg");
 }
@@ -355,10 +359,10 @@ footer li img {
     height: 100%;
     z-index: 2;
     padding: 10%;
-    display: block;
     color: #fff;
     text-decoration: none;
     display: block;
+    cursor: pointer;
   }
 
   .bg-cover:hover {
@@ -375,6 +379,10 @@ footer li img {
 
   .bg-cover.ip {
     background: #ff9d00;
+  }
+
+  .bg-cover.sx3 {
+    background: #68aabc;
   }
 
   .bg-cover.pizzaville {
