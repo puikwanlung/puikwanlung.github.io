@@ -143,16 +143,6 @@
   color: #ffffff;
 }
 
-#sxthree-content .xd-btn {
-  background-color: #bd5d57;
-  color: #ffffff;
-}
-
-#sxthree-content .xd-btn:hover {
-  background-color: #69a2e9;
-  color: #ffffff;
-}
-
 /* Content */
 .sec-title {
   width: 100%;
@@ -209,6 +199,20 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.content-img-column {
+  text-align: center;
+}
+
+.content-img-column img {
+  width: 40%;
+  height: 40%;
+  margin-bottom: 5%;
+}
+
+.content-img-column article {
+  text-align: left;
 }
 
 .credit-box ul li {
@@ -355,6 +359,19 @@
   .video {
     width: 640px;
     height: 385px;
+  }
+
+  /* Content img column  */
+  .content-img-column {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+
+  .content-img-column img {
+    width: 25%;
+    height: 25%;
+    margin-right: 5%;
   }
 }
 
