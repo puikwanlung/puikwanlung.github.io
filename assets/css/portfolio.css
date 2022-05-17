@@ -106,7 +106,7 @@
   margin-bottom: 10px;
 }
 
-#xd-links-box {
+.xd-links-box {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -121,24 +121,29 @@
   font-size: 1.2em;
   font-weight: 400;
   margin-bottom: 10px;
+  padding: 0 20px;
 }
 
-#nxr-content .xd-btn {
+.xd-btn.center {
+  margin: 0 auto 10px auto;
+}
+
+.xd-btn#nxr-btn {
   background-color: #eacb7b;
   color: #0b0b0b;
 }
 
-#nxr-content .xd-btn:hover {
+.xd-btn#nxr-btn:hover {
   background-color: #1da2b1;
   color: #ffffff;
 }
 
-#ls-content .xd-btn {
+.xd-btn#ls-btn {
   background-color: #bd5d57;
   color: #ffffff;
 }
 
-#ls-content .xd-btn:hover {
+.xd-btn#ls-btn:hover {
   background-color: #69a2e9;
   color: #ffffff;
 }
