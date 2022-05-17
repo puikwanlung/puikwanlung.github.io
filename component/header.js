@@ -10,7 +10,7 @@ template.innerHTML = `
     <a class="nav-link active-port" id="work-select" href="/index.html">PORTFOLIO</a>
   </li>
   <li class="nav-item">
-    <a href="/about.htm" class="nav-link active-about" >ABOUT</a>
+    <a href="/about.htm" class="nav-link active-about" >GET TO KNOW ME</a>
   </li>
   <li class="nav-item">
     <a href="/contact.htm" class="nav-link active-contact">CONTACT</a>
