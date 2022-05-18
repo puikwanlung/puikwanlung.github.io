@@ -17,31 +17,44 @@ a {
 }
 
 header {
-  padding: 38px 0 20px 0;
+  padding: 38px 0 0 0;
   background-color: #fff;
   text-align: center;
 }
 
-#header-width {
+#header-width,
+#portfolio-link {
   width: 85%;
   margin: 0 auto;
 }
 
-header .nav {
+header .nav,
+#portfolio-link .nav {
   justify-content: space-between;
   flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
 }
 
-#logo {
+#portfolio-link {
+  margin: 20px auto;
+}
+
+#aboutme #portfolio-link,
+#contact #portfolio-link {
+  display: none;
+}
+
+header #logo {
   width: 100px;
   margin-bottom: 20px;
 }
 
 .nav-link {
   color: #191919;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 600;
-  padding: 0.5rem 0;
+  padding: 5px 10px;
 }
 
 .nav-link:hover {
@@ -53,6 +66,26 @@ header .nav {
   color: #f9d026;
 }
 
+#portfolio.all .nav-link.active-all,
+#portfolio.uxui .nav-link.active-uxui,
+#portfolio.ae .nav-link.active-md,
+#portfolio.threed .nav-link.active-threed {
+  background-color: #f9d026;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+#portfolio .nav-link.active-port::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
 /* Works cards */
 .hidden {
   display: none !important;
@@ -60,6 +93,7 @@ header .nav {
 
 main {
   flex-grow: 1;
+  margin-top: 20px;
 }
 
 /* Content */
@@ -69,25 +103,6 @@ main {
   max-width: 1000px;
   display: flex;
   flex-direction: column;
-}
-
-#work_filter {
-  align-self: flex-end;
-  margin-bottom: 20px;
-}
-
-.dropdown-toggle {
-  background-color: #f8d026;
-  display: inline-block;
-  border-radius: 100px;
-  padding: 5px 20px;
-  color: #191919;
-  text-decoration: none;
-}
-
-.dropdown-toggle:hover {
-  background-color: #ead992;
-  color: #191919;
 }
 
 section {
@@ -347,12 +362,20 @@ footer li img {
 
 /*for small desktop  */
 @media only screen and (min-width: 768px) {
-  header .nav {
+  header .nav,
+  #portfolio-link .nav {
     justify-content: center;
   }
-  header .nav li {
-    padding: 0 38px;
+  header .nav li,
+  #portfolio-link .nav li {
+    padding: 0 20px;
   }
+
+  .nav-link {
+    font-size: 1.2em;
+    padding: 5px 20px;
+  }
+
   .bg-cover {
     top: 100%;
     position: relative;

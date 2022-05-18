@@ -14,12 +14,7 @@ template.innerHTML = `
   <img src="/assets/images/icon-email.png" />
   <a href="mailto:eirineko@gmail.com">eirineko@gmail.com</a>
 </li>
-
 </ul></footer>
-
-
-
-
 `;
 
 document.body.appendChild(template.content);
