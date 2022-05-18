@@ -23,7 +23,7 @@ header {
 }
 
 #header-width {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -63,7 +63,7 @@ main {
 
 /* Content */
 #cards {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   max-width: 1000px;
   display: flex;
@@ -185,7 +185,7 @@ section a:hover {
 /* About us */
 #aboutus-content,
 #contact-box {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   max-width: 1000px;
 }
@@ -304,7 +304,7 @@ span.highlight:hover {
 
 /* Footer */
 footer {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   text-align: right;
   padding: 50px 0;
@@ -445,7 +445,7 @@ footer li img {
     display: flex;
     justify-content: center;
     align-items: top;
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     max-width: 1000px;
   }
