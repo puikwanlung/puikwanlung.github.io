@@ -41,6 +41,7 @@ header .nav {
   color: #191919;
   font-size: 1.2em;
   font-weight: 600;
+  padding: 0.5rem 0;
 }
 
 .nav-link:hover {
