@@ -22,16 +22,16 @@ template.innerHTML = `
 <div id="portfolio-link">
 <ul class="nav">
   <li class="nav-item">
-    <a class="nav-link active-all" id="select-all" href="/index.html">All</a>
+    <a class="nav-link active-all" id="select-all" href="/">All</a>
   </li>
   <li class="nav-item">
-    <a href="/uxui" class="nav-link active-uxui" id="select-UXUI">UX & UI Design</a>
+    <a href="/#uxui" class="nav-link active-uxui" id="select-UXUI">UX & UI Design</a>
   </li>
   <li class="nav-item">
-    <a href="/motion-design" class="nav-link active-md" id="select-AE">Motion Design</a>
+    <a href="/#motion-design" class="nav-link active-md" id="select-AE">Motion Design</a>
   </li>
   <li class="nav-item">
-    <a href="/3D-max" class="nav-link active-threed" id="select-threeD" id="select-threeD">3D Max</a>
+    <a href="/#3D-max" class="nav-link active-threed" id="select-threeD" id="select-threeD">3D Max</a>
   </li>
 </ul>
 </div>
