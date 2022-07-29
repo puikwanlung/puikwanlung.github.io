@@ -160,6 +160,10 @@ section a:hover {
   line-height: 1.2em;
 }
 
+#lingnan {
+  background-image: url("../images/thumb/lingnan-uni.jpg");
+}
+
 #nxr {
   background-image: url("../images/thumb/nxr.jpg");
 }
@@ -395,6 +399,10 @@ footer li img {
 
   .card-box:hover > .bg-cover {
     top: 0;
+  }
+
+  .bg-cover.lingnan {
+    background: #2a5369;
   }
 
   .bg-cover.nxr {

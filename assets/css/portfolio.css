@@ -35,6 +35,14 @@
   color: #ffffff;
 }
 
+#lingnan-banner {
+  background-image: url("../images/lingnan-banner.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
 .banner_whole {
   height: 30vh;
   min-height: 120px;
@@ -70,7 +78,7 @@
 .content-container h1 {
   font-size: 2em;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #banner-box h2,
@@ -85,7 +93,7 @@
 .content-container h3 {
   font-size: 1.2em;
   font-weight: 200;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .content-container h4 {
@@ -259,6 +267,46 @@
   width: 49%;
 }
 
+/* Content Flexbox */
+.content-flex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.content-flex h1 {
+  padding: 0;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+.content-flex article {
+  width: 100%;
+}
+
+.content-flex article.txt {
+  text-align: left;
+  align-self: center;
+}
+
+.content-flex article img {
+  /* width: 380px; */
+  margin: 0;
+}
+
+.academic-blue {
+  background-color: #2a5369;
+  color: #ffffff;
+}
+
+.content-flex article.right {
+  text-align: right;
+}
+
+.content-flex article.left {
+  text-align: left;
+}
+
 /* IELTSpractice website building */
 .ip-screens {
   position: relative;
@@ -330,7 +378,8 @@
 @media only screen and (min-width: 768px) {
   #nxr-banner,
   #ls-banner,
-  #sxthree-banner {
+  #sxthree-banner,
+  #lingnan-banner {
     height: 40vh;
     min-height: 500px;
     background-size: cover;
@@ -388,6 +437,16 @@
     width: 25%;
     height: 25%;
     margin-right: 5%;
+  }
+
+  /* Flexbox column  */
+  .content-flex article {
+    width: 50%;
+  }
+
+  .content-flex article img {
+    width: 380px;
+    margin: 0;
   }
 }
 
