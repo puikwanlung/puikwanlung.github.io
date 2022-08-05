@@ -36,11 +36,14 @@
 }
 
 #lingnan-banner {
-  background-image: url("../images/lingnan-banner.jpg");
+  background-image: url("../images/lingnan-imcsp-banner.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
+  height: 30vh;
+  min-height: 120px;
+  margin-bottom: 20px;
 }
 
 .banner_whole {
@@ -269,9 +272,7 @@
 
 /* Content Flexbox */
 .content-flex {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  margin: 0 0 50px 0;
 }
 
 .content-flex h1 {
@@ -285,26 +286,19 @@
 }
 
 .content-flex article.txt {
-  text-align: left;
-  align-self: center;
+  text-align: center;
 }
 
+.academic-blue article img,
 .content-flex article img {
-  /* width: 380px; */
-  margin: 0;
+  width: 70%;
+  margin: 0 0 38px 0;
 }
 
 .academic-blue {
   background-color: #2a5369;
   color: #ffffff;
-}
-
-.content-flex article.right {
-  text-align: right;
-}
-
-.content-flex article.left {
-  text-align: left;
+  padding: 50px 0;
 }
 
 /* IELTSpractice website building */
@@ -374,7 +368,7 @@
   right: -70px;
 }
 
-/*for phones  */
+/*for desktop  */
 @media only screen and (min-width: 768px) {
   #nxr-banner,
   #ls-banner,
@@ -439,14 +433,26 @@
     margin-right: 5%;
   }
 
-  /* Flexbox column  */
-  .content-flex article {
-    width: 50%;
+  /* Content Flexbox */
+  .content-flex {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .content-flex article.txt {
+    text-align: left;
   }
 
   .content-flex article img {
-    width: 380px;
     margin: 0;
+    width: 90%;
+  }
+
+  .academic-blue article img {
+    margin: 0;
+    width: 80%;
   }
 }
 
