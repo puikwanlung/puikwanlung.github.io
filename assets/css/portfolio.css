@@ -170,6 +170,16 @@
   color: #0b0b0b;
 }
 
+.xd-btn#lingnan-btn {
+  background-color: #e32028;
+  color: #ffffff;
+}
+
+.xd-btn#lingnan-btn:hover {
+  background-color: #2b536b;
+  color: #ffffff;
+}
+
 /* Content */
 .sec-title {
   width: 100%;
