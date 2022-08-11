@@ -4,7 +4,9 @@ template.innerHTML = `
 <header>
 <div id="header-width">
 
-<img src="/assets/images/logo-puikwanlung.jpg" id="logo" alt="Logo of Pui Kwan Lung, Interactive Media Designer" />
+<a href="/">
+  <img src="/assets/images/logo-puikwanlung.gif" id="logo" alt="Logo of Pui Kwan Lung, Interactive Media Designer" />
+</a>
 <ul class="nav">
   <li class="nav-item">
     <a class="nav-link active-port" id="work-select" href="/index.html">PORTFOLIO</a>
