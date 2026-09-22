@@ -301,7 +301,7 @@ section a:hover {
   color: #191919;
 }
 
-#contact-box h2 img {
+#contact-box h2 img, #aboutus-content h2 img {
   width: 28px;
   height: 28px;
   margin-right: 3px;
