@@ -5,7 +5,7 @@ template.innerHTML = `
 <div id="header-width">
 
 <a href="/">
-  <img src="/assets/images/logo-puikwanlung.gif" id="logo" alt="Logo of Pui Kwan Lung, Program Coordinator & Content Specialist" />
+  <img src="/assets/images/logo-puikwanlung.gif" id="logo" alt="Logo of Pui Kwan Lung, Program & Student Engagement Coordinator" />
 </a>
 <ul class="nav">
   <li class="nav-item">
