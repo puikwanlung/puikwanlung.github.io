@@ -1,7 +1,7 @@
 const footer = document.createElement("template");
 
 template.innerHTML =`
-<footer><img src="/assets/images/pui_slogo.png"  alt="Logo of Pui Kwan Lung, Program Coordinator & Content Specialist" class="mb-2 logo" />
+<footer><img src="/assets/images/pui_slogo.png"  alt="Logo of Pui Kwan Lung, Program & Student Engagement Coordinator" class="mb-2 logo" />
 <p>&copy; <span id="year"></span> Portfolio & Site by Pui Kwan Lung</p>
 
 <ul id="social-links">
